@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IR6fMtCgwPc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jorha\\source\\repos\\Foton\\XenoUI\\XenoUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jorha\\.nuget\\packages\\microsoft.web.webview2\\1.0.2592.51\\microsoft.web.webview2.1.0.2592.51.nupkg.sha512"
+  ],
+  "logs": []
+}
