@@ -2,30 +2,19 @@
 > You are most likely going to be banned since this is detected by Byfron. Use an alt account while running Xeno. Use the repository to understand what's happening and how it works.
 > I am not liable for any bans
 
-# Xeno
+# Foton
 An executor made for the web version of Roblox.
 
 It uses the common method of writing unsigned bytecode into a Roblox core module script to manage execution, also more stable and flexible than most executors that has used this exact method.
 
-# Donation
-I have made a total of **$34.97** from making the project Xeno. I would highly appreciate any donations that were given to me by anyone since I have spent a lot of time working on this project.
+# Xeno
+This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basically Xeno Premium if it Exist😅
 
-**CashApp:** ``$RizveA``
+### [**Rizve**](https://github.com/Riz-ve/)
 
-**PayPal:** ``RizveA``
+### [**Xeno**](https://github.com/Riz-ve/Xeno)
 
-**Bitcoin:** ``bc1qvhdnqtgcselqv9s9dt9varadh0zkal5239pgl4``
-
-**Ethereum:** ``0x713eAb6Bc8e18D1E0cdF6f03eA03df57c889592A``
-
-**Litecoin:** ``LVNsAoXbJHgdCcc6oi8cqbYmGqg9tXsM2P``
-
-Top 3 Donators:
-1. [*Czdxy*](https://discord.com/users/920163701934424084): **$18.00**
-2. [*kqrara*](https://discord.com/users/1241238935288545322): **$11.62**
-3. **literallysolodev**: **$5.34**
-
-## Note
+## Note from Rizve
 If you're going to use my source and "skid" off of it atleast use the license and give credits. Don't be like the others who used my entire source code and claimed it as their own without mentioning anything about Xeno nor the publisher + distributing & selling to others.
 
 ## Features
@@ -93,12 +82,33 @@ This project uses the following libraries:
 - [**zstd**](https://github.com/facebook/zstd)
 - [**openssl**](https://github.com/openssl/openssl)
 
+#### The proper version of **httplib** is already included inside this project
 Dependencies are managed with [**vcpkg**](https://github.com/microsoft/vcpkg). Install them with this command:
 ```sh
 vcpkg install xxhash zstd openssl
 ```
 
-The proper version of **httplib** is already included inside this project
+
+
+## How to Compile!
+
+install vcpkg, add it to the PATH
+
+set another env variable: ```VCPKG_DEFAULT_TRIPLET``` and value: ```x64-windows``` its permanent, so, if u whant to compile another project that uses vcpkg with x86 then remove this on env variables!
+
+now restart your PC
+
+now send this on console: ```vcpkg install xxhash zstd openssl``` and wait serveral minutes
+
+when it ends, make sure you opened have this repository on you last open list o visual studio, then, execute this comand: ```vcpkg integrate install```
+
+now open the project, set the build mode to ```Release``` and ```x64```, now compile and wait more sevaral minutes
+
+
+## Compiling!
+When you click to build on the top of your screen, it compiles only the dll by defalt because the UI doesnt need to be recompiled again and again, so, to you compile the UI you Right Click the "XenoUI" and Click Compile.
+Thats it.
+
 
 ### Credits
 Thank you [**Incognito**](https://github.com/Incognito-Roblox/Incognito) for the method.
