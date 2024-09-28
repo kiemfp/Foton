@@ -6,10 +6,12 @@ local HttpService, UserInputService, InsertService = game:FindService("HttpServi
 local RunService, CoreGui, StarterGui = game:GetService("RunService"), game:FindService("CoreGui"), game:GetService("StarterGui")
 local VirtualInputManager, RobloxReplicatedStorage = Instance.new("VirtualInputManager"), game:GetService("RobloxReplicatedStorage")
 
+local exploit_thread = 3
+
 if RobloxReplicatedStorage:FindFirstChild("Xeno") then return end
 
 local XenoContainer = Instance.new("Folder", RobloxReplicatedStorage)
-XenoContainer.Name = "Xeno"
+XenoContainer.Name = "Foton"-- PERIGO ONLHAR : se erro ent: Mude para "Xeno"
 local objectPointerContainer, scriptsContainer = Instance.new("Folder", XenoContainer), Instance.new("Folder", XenoContainer)
 objectPointerContainer.Name = "Instance Pointers"
 scriptsContainer.Name = "Scripts"
@@ -70,7 +72,7 @@ local libs = {
 
 if script.Name == "VRNavigation" then
 	StarterGui:SetCore("SendNotification", {
-		Title = "[Xeno]",
+		Title = "[Foton]",
 		Text = "Used ingame method. When you leave the game it might crash!"
 	})
 end
@@ -332,7 +334,7 @@ function Bridge:InternalRequest(body, timeout)
 	end)
 
 	if success and result then
-		error("XENO SERVER ERROR: " .. tostring(result), 2)
+		error("Foton ERROR ON SERVER: " .. tostring(result), 2)
 	end
 
 	error("An unknown error occured by the server.", 2)
@@ -431,7 +433,7 @@ function Bridge:SyncFiles()
 		getAllFiles("./")
 	end) if not success then
 		StarterGui:SetCore("SendNotification", {
-			Title = "[Xeno]",
+			Title = "[Foton]",
 			Text = "Could not sync virtual files from client to external. Server was closed or it is being overloaded"
 		})
 		return
@@ -525,7 +527,7 @@ function Bridge:loadstring(source, chunkName)
 			end
 
 			if (tick() - clock > 5) then
-				warn("[XENO]: loadstring failed and timed out")
+				warn("[Foton]: loadstring failed and timed out")
 				for _, module in pairs(cachedModules) do
 					module:Destroy()
 				end
@@ -577,7 +579,7 @@ function Bridge:request(options)
 	end
 	return {
 		Success = false,
-		StatusMessage = "Can't connect to Xeno web server: " .. self.serverUrl,
+		StatusMessage = "Can't connect to Foton web server: " .. self.serverUrl,
 		StatusCode = 599;
 		HttpError = Enum.HttpError.ConnectFail
 	}
@@ -845,18 +847,18 @@ function Xeno.request(options)
 	options.Body = options.Body or "e30=" -- "{}" in base64
 	options.Headers = options.Headers or {}
 	if httpSpy then
-		Xeno.rconsoleprint("-----------------[Xeno Http Spy]---------------\nUrl: " .. options.Url .. 
+		Xeno.rconsoleprint("-----------------[Foton Http Spy]---------------\nUrl: " .. options.Url .. 
 			"\nMethod: " .. options.Method .. 
 			"\nBody: " .. options.Body .. 
 			"\nHeaders: " .. tostring(HttpService:JSONEncode(options.Headers))
 		)
 	end
 	if (options.Headers["User-Agent"]) then assert(type(options.Headers["User-Agent"]) == "string", "invalid option 'User-Agent' for argument #1 to 'request.Header' (string expected, got " .. type(options.Url) .. ") ", 2) end
-	options.Headers["User-Agent"] = options.Headers["User-Agent"] or "Xeno/RobloxApp/" .. tostring(Xeno.about._version)
+	options.Headers["User-Agent"] = options.Headers["User-Agent"] or "Foton|" .. tostring(Xeno.about._version)
 	options.Headers["Exploit-Guid"] = tostring(hwid)
 	options.Headers["Xeno-Fingerprint"] = tostring(hwid)
 	options.Headers["Roblox-Place-Id"] = tostring(game.PlaceId)
-	options.Headers["Roblox-Game-Id"] = tostring(game.JobId)
+	options.Headers["Roblox-Game-Id"] = tostring(game.GameId)
 	options.Headers["Roblox-Session-Id"] = HttpService:JSONEncode({
 		["GameId"] = tostring(game.GameId),
 		["PlaceId"] = tostring(game.PlaceId)
@@ -1199,7 +1201,7 @@ function Xeno.isfolder(path)
 	end
 	return Bridge:isfolder(path)
 end
-function Xeno.isfile(path) -- return not Xeno.isfolder(path)
+function Xeno.isfile(path) -- return not Foton.isfolder(path)
 	assert(type(path) == "string", "invalid argument #1 to 'isfile' (string expected, got " .. type(path) .. ") ", 2)
 	if getUnsaved(Bridge.delfile, path) then
 		return false
@@ -1485,14 +1487,14 @@ end
 Xeno.savegame = Xeno.saveinstance
 
 function Xeno.getexecutorname()
-	return Xeno.about._name
+	return Xeno.about._name .. "| Foton"
 end
 function Xeno.getexecutorversion()
-	return Xeno.about._version
+	return Xeno.about._version "| Foton" --MARKED KIEMFP idk
 end
 
 function Xeno.identifyexecutor()
-	return Xeno.getexecutorname(), Xeno.getexecutorversion()
+	return Xeno.getexecutorname() .. "| Foton", Xeno.getexecutorversion()
 end
 Xeno.whatexecutor = Xeno.identifyexecutor
 
@@ -1509,7 +1511,7 @@ function Xeno.getscriptbytecode(script_instance)
 end
 Xeno.dumpstring = Xeno.getscriptbytecode
 
--- Thanks to plusgiant5 for letting me use konstant api
+-- Thanks to plusgiant5 for letting me use konstant api, Foton Modded does nor have the permission but idk, i wont change this.
 
 local last_call = 0
 local function konst_call(konstantType: string, scriptPath: Script | ModuleScript | LocalScript): string
@@ -1976,13 +1978,23 @@ function Xeno.checkcaller()
 end
 
 function Xeno.getthreadcontext()
-	return 3
+	return exploit_thread
 end
 Xeno.getthreadidentity = Xeno.getthreadcontext
 Xeno.getidentity = Xeno.getthreadcontext
 
-function Xeno.setthreadidentity()
-	return 3, "Not Implemented"
+function identity_spoofed()
+	print("Current identity is "..exploit_thread)
+end --KIEMFP CHECK
+	
+end
+
+function Xeno.setthreadidentity(identity) --KIEMFP CHECK
+    if type(identity) ~= "number" then --we dont want to put a string or anything else
+        print("[Foton] Err: identity must be a number")
+    end
+    exploit_thread = identity --set identity
+    printidentity = identity_spoofed --override the old print identity function
 end
 Xeno.setidentity = Xeno.setthreadidentity
 Xeno.setthreadcontext = Xeno.setthreadidentity
