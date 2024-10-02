@@ -15,10 +15,10 @@
     <StartupObject>XenoUI.App</StartupObject>
     <PlatformTarget>x64</PlatformTarget>
     <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
-    <Title>Xeno</Title>
-    <Copyright>Rizve</Copyright>
-    <Description>Xeno - Executor UI
-https://github.com/Riz-ve/Xeno</Description>
+    <Title>Foton</Title>
+    <Copyright>Rizve, Kiemfp</Copyright>
+    <Description>Foton - Executor UI
+rizve.us.to  github.com/kiemfp/Foton</Description>
     <RepositoryUrl>https://github.com/Riz-ve/Xeno/tree/main/XenoUI</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -26,11 +26,12 @@ https://github.com/Riz-ve/Xeno</Description>
     <Authors>$(AssemblyName)</Authors>
     <PackageId>$(AssemblyName)</PackageId>
     <Product>Xeno</Product>
-    <FileVersion>1.0.5</FileVersion>
-    <AssemblyVersion>1.0.5</AssemblyVersion>
-    <Version>1.0.5</Version>
+    <FileVersion>1.1.1</FileVersion>
+    <AssemblyVersion>1.1.1</AssemblyVersion>
+    <Version>1.1.1</Version>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
   <ItemGroup>

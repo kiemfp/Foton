@@ -68,7 +68,7 @@ namespace XenoUI {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/XenoUI;V1.0.5;component/scriptswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/XenoUI;V1.1.1;component/scriptswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ScriptsWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
