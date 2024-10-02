@@ -54,13 +54,13 @@ namespace XenoUI
 			try
 			{
 				using var client = new HttpClient();
-				string latestVersion = await client.GetStringAsync("https://rizve.us.to/Xeno/LatestVersion");
+				string latestVersion = await client.GetStringAsync("https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/LatestVersion");
 				if (latestVersion != XenoVersion)
 				{
-					MessageBox.Show($"The current version {XenoVersion} is outdated.\n\nPlease download the latest version of Xeno ({latestVersion}) here: https://github.com/Riz-ve/Xeno/releases", "Outdated Xeno version", MessageBoxButton.OK, MessageBoxImage.Warning);
+					MessageBox.Show($"The current version {XenoVersion} is outdated.\n\nPlease download the latest version of Foton ({latestVersion}) here: https://github.com/kiemfp/Foton/", "Outdated Foton version", MessageBoxButton.OK, MessageBoxImage.Warning);
 					Application.Current.Shutdown();
 				}
-				SupportedVersion = await client.GetStringAsync("https://rizve.us.to/Xeno/SupportedVersion");
+				SupportedVersion = await client.GetStringAsync("https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/AcceptedVersion");
 			}
 			catch (HttpRequestException e)
 			{
@@ -139,9 +139,9 @@ namespace XenoUI
 			{
 				await Task.Delay(5);
 			}
-			if (SupportedVersion != client.version)
+			if (/*SupportedVersion != client.version*/ false) // CHECK
 			{
-				MessageBox.Show($"Xeno might not be compatible on the client {client.name} with {client.version}\n\nSupported version: {SupportedVersion}\n\nClick OK to continue using Xeno.", "Version Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
+				MessageBox.Show($"Foton might not be compatible on the client {client.name} with {client.version}\n\nSupported version: {SupportedVersion}\n\nClick OK to continue using Foton.", "Version Mismatch", MessageBoxButton.OK, MessageBoxImage.Warning);
 			}
 		}
 

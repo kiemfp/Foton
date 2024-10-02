@@ -20,7 +20,7 @@ local Xeno = {
 	about = {
 		_name = 'Xeno',
 		_version = '%XENO_VERSION%',
-		_publisher = ".rizve | https://rizve.us.to"
+		_publisher = ".rizve | https://rizve.us.to  ||  Kiemfp | github.com/Kiemfp"
 	}
 }
 table.freeze(Xeno.about)
@@ -58,15 +58,15 @@ end
 local libs = {
 	{
 		['name'] = "HashLib",
-		['url'] = "https://rizve.us.to/Xeno/hash"
+		['url'] = "https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/H_hash"
 	},
 	{
 		['name'] = "lz4",
-		['url'] = "https://rizve.us.to/Xeno/lz4"
+		['url'] = "https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/lz4"
 	},
 	{
 		['name'] = "DrawingLib",
-		['url'] = "https://rizve.us.to/Xeno/drawing"
+		['url'] = "https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/drawing"
 	}
 }
 
