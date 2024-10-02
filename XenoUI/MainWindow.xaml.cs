@@ -49,7 +49,7 @@ namespace XenoUI
 				string tab = Path.Combine(bin, "editor.lua");
 
 				Directory.CreateDirectory(bin);
-				if (!File.Exists(tab)) File.WriteAllText(tab, "print(\"Hello, World!\")\n-- Made by .rizve on Discord (https://rizve.us.to)");
+				if (!File.Exists(tab)) File.WriteAllText(tab, "print(\"Hello, World!\")\n-- Made by .rizve on Discord (https://rizve.us.to) and Kiemfp github.com/kiemfp");
 
 				if (!File.Exists(indexPath)) throw new FileNotFoundException("Could not load the Monaco");
 
