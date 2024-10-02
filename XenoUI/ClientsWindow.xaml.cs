@@ -55,7 +55,7 @@ namespace XenoUI
 			{
 				using var client = new HttpClient();
 				string latestVersion = await client.GetStringAsync("https://raw.githubusercontent.com/kiemfp/Foton/refs/heads/main/Assets/LatestVersion");
-				if (latestVersion != XenoVersion)
+				if (/*latestVersion != XenoVersion*/ false) //KIEMFP
 				{
 					MessageBox.Show($"The current version {XenoVersion} is outdated.\n\nPlease download the latest version of Foton ({latestVersion}) here: https://github.com/kiemfp/Foton/", "Outdated Foton version", MessageBoxButton.OK, MessageBoxImage.Warning);
 					Application.Current.Shutdown();

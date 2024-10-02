@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Rizve")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Xeno - Executor UI\r\nhttps://github.com/Riz-ve/Xeno")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.5")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.5+be129276cbeb31fdeef5a9b4ed84b8190ed51efc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.5+6fde7ce19a918f232983bc935192f5e4aaba0993")]
 [assembly: System.Reflection.AssemblyProductAttribute("Xeno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XenoUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.5")]

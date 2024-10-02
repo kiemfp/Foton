@@ -151,11 +151,11 @@
   "project": {
     "version": "1.0.5",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorha\\Source\\Repos\\Foton\\XenoUI\\XenoUI.csproj",
+      "projectUniqueName": "C:\\Users\\jorha\\Source\\Repos\\FotonO\\XenoUI\\XenoUI.csproj",
       "projectName": "XenoUI",
-      "projectPath": "C:\\Users\\jorha\\Source\\Repos\\Foton\\XenoUI\\XenoUI.csproj",
+      "projectPath": "C:\\Users\\jorha\\Source\\Repos\\FotonO\\XenoUI\\XenoUI.csproj",
       "packagesPath": "C:\\Users\\jorha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorha\\Source\\Repos\\Foton\\XenoUI\\obj\\",
+      "outputPath": "C:\\Users\\jorha\\Source\\Repos\\FotonO\\XenoUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jorha\\AppData\\Roaming\\NuGet\\NuGet.Config",
