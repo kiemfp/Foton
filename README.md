@@ -101,6 +101,8 @@ vcpkg install xxhash zstd openssl
 
 ## How to Compile!
 
+delete "build"  folder
+
 install vcpkg, add it to the PATH
 
 set another env variable: ```VCPKG_DEFAULT_TRIPLET``` and value: ```x64-windows``` its permanent, so, if u whant to compile another project that uses vcpkg with x86 then remove this on env variables!
@@ -113,6 +115,7 @@ when it ends, make sure you opened have this repository on you last open list o 
 
 now open the project, set the build mode to ```Release``` and ```x64```, now compile and wait more sevaral minutes
 
+when end, copy the "Monaco" folder and paste in "build/Release/net8.0-windows/bin
 
 ## Compiling!
 When you click to build on the top of your screen, it compiles only the dll by defalt because the UI doesnt need to be recompiled again and again, so, to you compile the UI you Right Click the "XenoUI" and Click Compile.
