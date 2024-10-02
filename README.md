@@ -17,9 +17,9 @@ It uses the common method of writing unsigned bytecode into a Roblox core module
 # Xeno
 This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basically Xeno Premium if it Exist😅
 
-### [**Rizve**](https://rizve.to)  {Banned.}
+### [**Rizve Discord**](https://rizve.us.to)
 
-### [**Xeno**](https://github.com/Riz-ve/Xeno)
+### [**Xeno**](https://github.com/Riz-ve/Xeno) {baned}
 
 ## Note from Rizve
 If you're going to use my source and "skid" off of it atleast use the license and give credits. Don't be like the others who used my entire source code and claimed it as their own without mentioning anything about Xeno nor the publisher + distributing & selling to others.
