@@ -101,7 +101,7 @@ vcpkg install xxhash zstd openssl
 
 ## How to Compile!
 
-delete "build"  folder
+delete "build" and "vcpkg_installed"  folder
 
 install vcpkg, add it to the PATH
 
