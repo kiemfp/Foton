@@ -46,7 +46,7 @@ static void activate_console() {
 	console_active = true;
 
 	AllocConsole();
-	SetConsoleTitleA("Xeno");
+	SetConsoleTitleA("Foton"); //Kiemfp check
 	FILE* pCout;
 	freopen_s(&pCout, "CONOUT$", "w", stdout);
 	freopen_s(&pCout, "CONIN$", "r", stdin);
@@ -145,7 +145,7 @@ static void serve(Response& res, const json& body) {
 		return;
 	}
 
-	if (cType == "mf") { // make folder
+	if (cType == "mf") { // make folder, not what you tink. 
 		if (!body.contains("p") /*path*/) {
 			res.status = 400;
 			res.set_content(R"({"error":"Missing required fields"})", "application/json");
