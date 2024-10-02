@@ -2,8 +2,10 @@
 > You are most likely going to be banned since this is detected by Byfron. Use an alt account while running Foton. Use the repository to understand what's happening and how it works.
 > I am not liable for any bans
 
-> [!WARNING]
+> INFO!
+>
 > This is just for PURE learning in how this works, please have more then 2 QI and understand this.
+>
 > We Wont say how to update this, normaly, if it appears with new offsets it prob, was just an error while pushing the updated project. and i dont know how to update de offsets too, so.
 
 
