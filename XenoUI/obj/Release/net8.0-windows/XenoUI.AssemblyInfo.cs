@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Rizve, Kiemfp")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Foton - Executor UI\r\nrizve.us.to  github.com/kiemfp/Foton")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1+ecf72306e69285dc525848f40101faa518885e66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.1+211688c9e897edfdcfaff574bf536deb15038dd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Xeno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XenoUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.1.1")]
