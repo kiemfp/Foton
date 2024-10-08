@@ -85,8 +85,9 @@ You can use the modified version of dex made for Xeno inside the released files
 <img src="v1.0.1-Preview.png" alt="Preview" width="600" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.3);" />
 <p>The Current UNC is <span style="color: green;">~80%</span></p>
 <img src="v1.1.1-UNC.png" alt="Preview" width="600" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.3);" />
-> [!INFO]
->There are some errors in the UNC in this picture!
+
+> INFO!
+> There are some errors in the UNC in this picture! i dont know why.
 
 
 
