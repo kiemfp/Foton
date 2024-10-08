@@ -19,7 +19,7 @@ This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basi
 
 ### [**Rizve Discord**](https://rizve.us.to)
 
-### [**Xeno Discord Server**](https://)
+### [**Xeno Discord Server**](https://discord.gg/fQNzTw2JXn)
 
 ### [**Xeno**](https://github.com/Riz-ve/Xeno) 
 ##### GitHub has set everything in the Rizve's account to private, so you won't be able to see anything from the official code, but if you want, simply go back to commit number 74-75*
