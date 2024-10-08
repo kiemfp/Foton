@@ -82,46 +82,10 @@ You can use the modified version of dex made for Xeno inside the released files
 <img src="v1.0.1-Preview.png" alt="Preview" width="600" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.3);" />
 <p>The Current UNC is <span style="color: green;">~80%</span></p>
 <img src="v1.1.1-UNC.png" alt="Preview" width="600" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), -10px -10px 20px rgba(255, 255, 255, 0.3);" />
-> INFO!
+> [!INFO]
 >There are some errors in the UNC in this picture!
 
-## Dependencies
-This project uses the following libraries:
 
-- [**httplib**](https://github.com/yhirose/cpp-httplib)
-- [**xxhash**](https://github.com/Cyan4973/xxHash)
-- [**zstd**](https://github.com/facebook/zstd)
-- [**openssl**](https://github.com/openssl/openssl)
-
-#### The proper version of **httplib** is already included inside this project
-Dependencies are managed with [**vcpkg**](https://github.com/microsoft/vcpkg). Install them with this command:
-```sh
-vcpkg install xxhash zstd openssl
-```
-
-
-
-## How to Compile!
-
-delete "build" and "vcpkg_installed"  folder
-
-install vcpkg, add it to the PATH
-
-set another env variable: ```VCPKG_DEFAULT_TRIPLET``` and value: ```x64-windows``` its permanent, so, if u whant to compile another project that uses vcpkg with x86 then remove this on env variables!
-
-now restart your PC
-
-now send this on console: ```vcpkg install xxhash zstd openssl``` and wait serveral minutes
-
-when it ends, make sure you opened have this repository on you last open list o visual studio, then, execute this comand: ```vcpkg integrate install```
-
-now open the project, set the build mode to ```Release``` and ```x64```, now compile and wait more sevaral minutes
-
-when end, copy the "Monaco" folder and paste in "build/Release/net8.0-windows/bin
-
-## Compiling!
-When you click to build on the top of your screen, it compiles only the dll by defalt because the UI doesnt need to be recompiled again and again, so, to you compile the UI you Right Click the "XenoUI" and Click Compile.
-Thats it.
 
 
 ### Credits
