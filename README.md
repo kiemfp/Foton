@@ -19,6 +19,8 @@ This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basi
 
 ### [**Rizve Discord**](https://rizve.us.to)
 
+### [**Xeno Discord Server**](https://)
+
 ### [**Xeno**](https://github.com/Riz-ve/Xeno) {baned}
 
 ## Note from Rizve
