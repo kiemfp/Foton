@@ -37,6 +37,8 @@ If you're going to use my source and "skid" off of it atleast use the license an
 - No in-game performance change & no high CPU usage
 - Custom functions like HttpSpy, getting the real address of a Instance, setting & getting globals across all clients, and spoofing instance
 
+### [****How To Compile!****](https://github.com/kiemfp/Foton/blob/main/HowToCompile.md)
+
 I have only used this project to learn C++ and a bit of C#.
 
 Do not expect the best code and memory management.
