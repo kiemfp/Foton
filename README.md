@@ -15,7 +15,7 @@ An executor made for the web version of Roblox.
 It uses the common method of writing unsigned bytecode into a Roblox core module script to manage execution, also more stable and flexible than most executors that has used this exact method.
 
 # Xeno
-This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basically Xeno Premium if it Exist😅
+This Repository is an Fork From the Xeno Repository, made by Rizve
 
 ### [**Rizve Discord**](https://rizve.us.to)
 
@@ -23,6 +23,8 @@ This Repository is an Fork From the Xeno Repository, made by Rizve, this is Basi
 
 ### [**Xeno**](https://github.com/Riz-ve/Xeno) 
 ##### GitHub has set everything in the Rizve's account to private, so you won't be able to see anything from the official code, but if you want, simply go back to commit number 74-75*
+
+###### sometimes i forgot to do somethings before pushing, so, you will see many commits
 
 ## Note from Rizve
 If you're going to use my source and "skid" off of it atleast use the license and give credits. Don't be like the others who used my entire source code and claimed it as their own without mentioning anything about Xeno nor the publisher + distributing & selling to others.
