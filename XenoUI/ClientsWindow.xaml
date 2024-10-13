@@ -89,7 +89,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Border CornerRadius="10" BorderBrush="Black" BorderThickness="2" Padding="6" Background="#090909">
+    <Border CornerRadius="20" BorderBrush="Black" BorderThickness="2" Padding="6" Background="#050A30">
         <Grid>
             <Grid VerticalAlignment="Top" Height="20" HorizontalAlignment="Right" Width="75" Margin="0,5,5,0" >
                 <Button Style="{StaticResource TitleBarButtonStyle}" x:Name="buttonClose"

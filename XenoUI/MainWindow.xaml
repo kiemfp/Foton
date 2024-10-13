@@ -6,10 +6,10 @@
         xmlns:local="clr-namespace:XenoUI"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         mc:Ignorable="d"
-        ResizeMode="NoResize" Title="Xeno" Height="400" Width="700" WindowStyle="None" Background="#090909" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+        ResizeMode="NoResize" Title="Foton" Height="400" Width="700" WindowStyle="None" Background="#050A30" MouseLeftButtonDown="Window_MouseLeftButtonDown">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" 
-            CornerRadius="15" 
+            CornerRadius="20" 
             CaptionHeight="0" />
     </WindowChrome.WindowChrome>
     <Window.Resources>
@@ -54,8 +54,8 @@
         <Grid>
             <WrapPanel>
                 <Image Source="/Resources/Images/icon.ico" Margin="10,0,0,0"/>
-                <TextBlock Foreground="White" FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" FontFamily="Segoe UI Black" ToolTip="Made by .rizve on Discord (https://rizve.us.to)">Xeno</TextBlock>
-                <TextBlock Foreground="White" Margin="3,0,0,0" VerticalAlignment="Center" FontFamily="Segoe UI Semibold">v1.0.8</TextBlock>
+                <TextBlock Foreground="White" FontSize="18" Margin="10,0,0,0" VerticalAlignment="Center" FontFamily="Segoe UI Black" ToolTip="Made by .rizve on Discord (https://rizve.us.to), modded by Kiemfp">Foton</TextBlock>
+                <TextBlock Foreground="White" Margin="3,0,0,0" VerticalAlignment="Center" FontFamily="Segoe UI Semibold">v1.1.1</TextBlock>
             </WrapPanel>
             <StackPanel Orientation="Horizontal" 
                         HorizontalAlignment="Right">
