@@ -1326,7 +1326,7 @@ local function InternalGet(url)
 		end
 	end
 
-	return result.Body
+	return result.Body -- ERROR HERE CHECK 56
 end
 
 pcall(function()
@@ -1339,7 +1339,7 @@ do
 
 	for i, libInfo in pairs(libs) do
 		task.spawn(function()
-			libs[i].content = Bridge:loadstring(InternalGet(libInfo.url), libInfo.name)()
+			libs[i].content = Bridge:loadstring(InternalGet(libInfo.url), libInfo.name)() --ERROR HERE CHECK 56
 			libsLoaded += 1
 		end)
 	end
@@ -2551,3 +2551,8 @@ task.spawn(function() -- execution handler
 		end)
 	end
 end)
+--[[
+lz4 ln 2 - 4
+draw ln 23
+1342
+infyiff.github.io]]
